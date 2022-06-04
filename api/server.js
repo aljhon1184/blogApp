@@ -1,4 +1,5 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const app = express();
 const authRoute = require("./routes/Auth");
 const postRoute = require("./routes/Post");
@@ -7,10 +8,12 @@ const CategoryRoute = require("./routes/Category");
 const mongoose = require('mongoose')
 const multer = require("multer");
 const path = require("path");
-const mongoDB = "mongodb+srv://aljhon:aljhon@cluster0.zc3hs.mongodb.net/Vlog?retryWrites=true&w=majority";
+
+dotenv.config();
 
 
-mongoose.connect(mongoDB, {
+
+mongoose.connect(process.env.MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
