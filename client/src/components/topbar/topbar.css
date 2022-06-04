@@ -1,0 +1,58 @@
+.top{
+    width: 100%;
+    background-color: #36454f;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    z-index: 999;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.topLeft, .topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topLeft{
+    font-size: 25px;
+    cursor: pointer;
+}
+.topicon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+.topicon:hover{
+    background-color: black;
+}
+.profileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.topList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.topListItem{
+    padding: 1rem;
+    cursor: pointer;
+}
+.topListItem:hover{
+    background-color: black;
+}
+
+.topCenter{
+    flex: 6;
+}
